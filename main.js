@@ -1,15 +1,15 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.131.3/build/three.module.js';
 import {OrbitControls} from 'https://cdn.skypack.dev/three@0.131.3/examples/jsm/controls/OrbitControls.js';
-import * as dat from 'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.js';
+// import * as dat from 'https://cdn.tutorialjinni.com/dat-gui/0.7.7/dat.gui.min.js';
 
 /**
  * Base
  */
 // Debug
-const gui = new dat.GUI({
-    width: 400,
-    closed: true
-})
+// const gui = new dat.GUI({
+//     width: 400,
+//     closed: true
+// })
 
 const textureLoader = new THREE.TextureLoader()
 const shape = textureLoader.load('1.png')
@@ -37,17 +37,17 @@ parameters.starColor = '#92959d'
 parameters.insideColor = '#ffffff'
 parameters.outsideColor = '#00114d'
 
-gui.add(parameters, 'count').min(100).max(100000).step(100).onChange(generateGalaxy).name('stars in galaxy')
-gui.add(parameters, 'stars').min(0).max(100000).step(100).onChange(generateBgStars).name('background stars')
-gui.addColor(parameters, 'starColor').onChange(generateBgStars).name('color of stars')
-gui.add(parameters, 'size').min(0.001).max(0.1).step(0.001).onChange(generateGalaxy).name('size of stars in galaxy')
-gui.add(parameters, 'radius').min(1).max(10).step(1).onChange(generateGalaxy).name('radius of galaxy')
-gui.add(parameters, 'branches').min(1).max(10).step(1).onChange(generateGalaxy).name('branches in galaxy')
-gui.add(parameters, 'spin').min(-5).max(5).step(0.001).onChange(generateGalaxy).name('spin of the galaxy')
-gui.add(parameters, 'randomness').min(0).max(2).step(0.01).onChange(generateGalaxy)
-gui.add(parameters, 'randomnessPower').min(1).max(10).step(1).onChange(generateGalaxy)
-gui.addColor(parameters, 'insideColor').onChange(generateGalaxy).name('color of core')
-gui.addColor(parameters, 'outsideColor').onChange(generateGalaxy).name('color of branches')
+// gui.add(parameters, 'count').min(100).max(100000).step(100).onChange(generateGalaxy).name('stars in galaxy')
+// gui.add(parameters, 'stars').min(0).max(100000).step(100).onChange(generateBgStars).name('background stars')
+// gui.addColor(parameters, 'starColor').onChange(generateBgStars).name('color of stars')
+// gui.add(parameters, 'size').min(0.001).max(0.1).step(0.001).onChange(generateGalaxy).name('size of stars in galaxy')
+// gui.add(parameters, 'radius').min(1).max(10).step(1).onChange(generateGalaxy).name('radius of galaxy')
+// gui.add(parameters, 'branches').min(1).max(10).step(1).onChange(generateGalaxy).name('branches in galaxy')
+// gui.add(parameters, 'spin').min(-5).max(5).step(0.001).onChange(generateGalaxy).name('spin of the galaxy')
+// gui.add(parameters, 'randomness').min(0).max(2).step(0.01).onChange(generateGalaxy)
+// gui.add(parameters, 'randomnessPower').min(1).max(10).step(1).onChange(generateGalaxy)
+// gui.addColor(parameters, 'insideColor').onChange(generateGalaxy).name('color of core')
+// gui.addColor(parameters, 'outsideColor').onChange(generateGalaxy).name('color of branches')
 
 
 let bgStarsGeometry = null
