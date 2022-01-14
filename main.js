@@ -1,8 +1,8 @@
 import './style.css'
-import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import * as dat from 'dat.gui'
-import { AdditiveBlending, Float32BufferAttribute } from 'three'
+import * as THREE from 'https://unpkg.com/three@0.136.0/build/three.js'
+import { OrbitControls } from 'https://unpkg.com/three-orbitcontrols-ts@0.1.2/dist/index.js'
+import * as dat from 'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.js'
+import { AdditiveBlending, Float32BufferAttribute } from 'https://unpkg.com/three@0.136.0/build/three.js'
 
 /**
  * Base
