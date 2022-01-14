@@ -1,7 +1,6 @@
-import * as THREE from 'https://unpkg.com/three@0.136.0/build/three.js'
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.131.3/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three-orbitcontrols-ts@0.1.2/dist/index.js'
 import * as dat from 'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.js'
-import { AdditiveBlending, Float32BufferAttribute } from 'https://unpkg.com/three@0.136.0/build/three.js'
 
 /**
  * Base
@@ -80,7 +79,7 @@ function generateBgStars(){
         size: parameters.size,
         depthWrite: false,
         sizeAttenuation: true,
-        blending: AdditiveBlending,
+        blending: THREE.AdditiveBlending,
         color: parameters.starColor,
         transparent: true,
         alphaMap: shape
@@ -151,7 +150,7 @@ function generateGalaxy(){
         size: parameters.size,
         depthWrite: false,
         sizeAttenuation: true,
-        blending: AdditiveBlending,
+        blending: THREE.AdditiveBlending,
         vertexColors: true,
         transparent: true,
         alphaMap: shape
