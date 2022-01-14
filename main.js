@@ -1,6 +1,6 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.131.3/build/three.module.js';
-import { OrbitControls } from 'https://unpkg.com/three-orbitcontrols-ts@0.1.2/dist/index.js'
-import * as dat from 'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.js'
+import {OrbitControls} from 'https://cdn.skypack.dev/three@0.131.3/examples/jsm/controls/OrbitControls.js';
+import * as dat from 'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.js';
 
 /**
  * Base
